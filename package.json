@@ -3,11 +3,12 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "antora --fetch --generator generator playbook.yml"
+    "build": "npm run antora playbook.yml",
+    "build-old": "antora --fetch --generator generator playbook.yml"
   },
   "dependencies": {
     "@antora/cli": "^2.0.0",
-    "generator": "file:generator"
+    "generator": "./generator"
   },
   "license": "MIT"
 }
